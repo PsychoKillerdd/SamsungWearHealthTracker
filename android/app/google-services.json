@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "907312242816",
+    "project_id": "samsungwearhealthtracker",
+    "storage_bucket": "samsungwearhealthtracker.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907312242816:android:41d9885a355c3a507c4665",
+        "android_client_info": {
+          "package_name": "com.samsungwearhealthtracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0SLQ3lPmmCMplHKwzBkC-uLiQEkh-cI0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

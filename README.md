@@ -1,4 +1,82 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React Native Samsung Wear OS Health Tracker
+
+🏥 **Aplicación móvil desarrollada en React Native que se conecta exclusivamente a relojes Samsung Wear OS para recolectar datos de salud.**
+
+## 📱 Funcionalidades
+
+### Datos de Salud Recolectados
+- ❤️ **Frecuencia cardíaca (HR)** - Latidos por minuto en tiempo real
+- 👣 **Pasos** - Contador de pasos dados durante el día
+- 😴 **Sueño** - Horas de descanso registradas
+- ⏰ **Tiempo en pantalla** - Minutos de uso activo del reloj
+
+### Características Principales
+- 🔄 **Sincronización automática cada 5 minutos** con Firebase
+- 📊 **Pantalla principal** con últimos datos recolectados
+- 🔄 **Botón de actualización manual** para obtener datos inmediatamente
+- 📈 **Historial completo** con marcas de tiempo en Firebase
+- 🏗️ **Arquitectura modular** con separación de responsabilidades
+- 🎨 **Interfaz moderna** con estilos consistentes
+
+## 🔧 Configuración Rápida
+
+### IMPORTANTE: Configurar Firebase
+1. Ve a [Firebase Console](https://console.firebase.google.com/)
+2. Crea un proyecto nuevo
+3. Añade una aplicación Android
+4. Descarga `google-services.json` y colócalo en `android/app/`
+5. Copia tu configuración en `src/firebase/config.ts`
+
+### Instalación y Ejecución
+```bash
+npm install
+npx react-native run-android
+```
+
+**⚠️ Nota Java**: Necesitas Java 17+. Si tienes Java 11, actualiza antes de compilar.
+
+## 🏛️ Arquitectura Implementada
+
+- **Context API** para estado global de salud
+- **Hooks personalizados** para lógica reutilizable  
+- **Servicios modulares** (Firebase, Samsung Health)
+- **Componentes reutilizables** con TypeScript
+- **Timer automático** de sincronización cada 5 minutos
+- **Manejo de errores** y estados de carga
+- **UI/UX moderna** con Material Design
+
+## 📊 Estado Actual
+
+✅ **Completado:**
+- Estructura completa del proyecto React Native
+- Integración Firebase Firestore configurada
+- Context API para manejo de estado global
+- Timer automático de sincronización (5 min)
+- Pantalla principal con datos actuales
+- Pantalla de historial con navegación
+- Componentes modulares y reutilizables
+- Estilos modernos y consistentes
+- TypeScript para tipado fuerte
+- Manejo de permisos y errores
+
+🚧 **Para Producción:**
+- Implementar Samsung Health SDK real
+- Crear Native Module Android
+- Configurar permisos de salud en AndroidManifest
+- Obtener certificación Samsung Health
+
+## 📱 Capturas de la App
+
+La aplicación incluye:
+- **Tab Navigation** con "Datos Actuales" e "Historial"
+- **Cards interactivas** para cada tipo de dato de salud
+- **Estados de loading** y manejo de errores
+- **Pull-to-refresh** para actualización manual
+- **Sincronización automática** en background
+
+---
+
+**🎯 ¡La app está lista para usar! Solo necesitas configurar Firebase y compilar.**
 
 # Getting Started
 
